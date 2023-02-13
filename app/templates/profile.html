@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}">
+
+<div id="Container">
+
+  <div id="tophalf">
+    <img src="{{url_for('static', filename='images/profilepic.jpg')}}" alt="User Profile Picture">
+    <h4 id="name">Jonathan Astwood</h4>
+    <p>@SanguineCynic <br> Kingston, Jamaica <br> Joined {{date}} <br></p>
+  </div>
+
+  <div id="bottomhalf">
+    <p id="bio">Technology has always been a passion of mine and I'm driven to succeed in the field. I have a strong academic background and technical skills that will help me achieve my career goal of becoming a network administrator.
+</p>
+    <div id="data">
+      <section class="profiledata">
+        <h5>2000</h5>
+        <p>Posts</p>
+      </section>
+      <section class="profiledata">
+        <h5>189</h5>
+        <p>Following</p>
+      </section>
+      <section class="profiledata">
+        <h5>69</h5>
+        <p>Followers</p>
+      </section>
+    </div>
+    <button type="button" id="followbtn" name="flwbutton">Follow</button>
+  </div>
+
+</div>
+{% endblock %}
